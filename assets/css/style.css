@@ -1,0 +1,239 @@
+body {
+    background-image: url("../images/raceroad.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+}
+
+.grid-container {
+    display:grid;
+    height: 100vh;
+    box-sizing: border-box;
+    grid-template-rows: 10em 5vh auto 15em;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-areas: ". title title ."
+        "traffic-light game-icons game-icons score-boards"
+        "traffic-light game-icons game-icons score-boards"
+        "road road road road";
+}
+h1 {
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    font-size: 50px;
+}
+
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    overflow: hidden;
+}
+
+
+.modal-inner-container {
+    background: white;
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+    opacity: 1;
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    background-color: rgba(82, 78, 78, 0.9);
+    color: white;
+    margin-top: 30px;
+    font-size: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+#close-button {
+    width: 80px;
+    background-color: #3b2e27;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-left: 275px;
+    margin-top: 30px;
+}
+
+#button-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 300px;
+    margin-left: 110px;
+    margin-top: 30px;
+    background-color: #c9804a;
+    border-color: #966036;
+    font-size: 20px;
+    color: #442208
+}
+
+#button-instruction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 300px;
+    margin-left: 110px;
+    margin-top: 30px;
+    background-color: #c9804a;
+    border-color: #966036;
+    font-size: 20px;
+    color: #442208
+}
+
+#button-unknown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 300px;
+    margin-left: 110px;
+    margin-top: 30px;
+    background-color: #c9804a;
+    border-color: #966036;
+    font-size: 20px;
+    color: #442208
+}
+
+.main-heading {
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    font-size: 50px;
+    grid-area: title;
+
+}
+
+#main-container {
+    color: white;
+    width: 500px;
+    margin: 0 auto;
+    background-color: #713500;
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    font-size: 25px;
+    grid-area: game-icons;
+}
+
+#traffic-light {
+    background-color: black;
+    margin-left: 50px;
+    display: none;
+    grid-area: traffic-light;
+    width:77px;
+    height:250px;
+}
+
+#red {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-style: solid;
+    border-color: black;
+}
+
+#yellow {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-style: solid;
+    border-color: black;
+}
+
+#green {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-style: solid;
+    border-color: black;
+}
+
+.light-surround {
+    border-radius: 50%;
+    border-top: 2px solid rgb(51, 50, 50);
+}
+
+#scissor-image {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+#scissor-image>* {
+    position: relative;
+    z-index: 9;
+}
+
+#paper-image>* {
+    position: relative;
+    z-index: 9;
+}
+
+#rock-image>* {
+    position: relative;
+    z-index: 9;
+}
+
+#paper-image {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+    
+}
+
+#rock-image {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+    
+}
+
+.rock-paper-scissor-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    display: none;
+    grid-area: game-icons;
+}
+
+
+
+
+
+
+
+
+.score-board {
+    height: 200px;
+    background-color: #713500;
+    color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mukta', sans-serif;
+    font-size: 30px;
+    border-color: #966036;
+    grid-area: score-boards;
+}
+
+#user-score,
+#ai-score {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Mukta', sans-serif;
+}

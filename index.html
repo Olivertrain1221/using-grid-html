@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Rocky Racers</title>
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <h1 class="main-heading">Rocky Racers</h1>
+
+        <section id="traffic-light" class="traffic-lights">
+            <div class="light-surround">
+                <div id="red" class="traffic-light"></div>
+            </div>
+            <div class="light-surround">
+                <div id="yellow" class="traffic-light"></div>
+            </div>
+            <div class="light-surround">
+                <div id="green" class="traffic-light"></div>
+            </div>
+        </section>
+
+        <section class="main-container" id="main-container">Welcome to Rocky Racers the question is are you ready to
+            <strong>ROCK PAPER SCISSORS!!</strong>
+            <button id="button-play">Play!</button>
+            <button id="button-instruction">Instructions</button>
+            <button id="button-unknown">Unknown yet</button>
+
+        </section>
+
+        <section class="rock-paper-scissor-logo">
+            <!-- Rock image -->
+            <svg id="rock-image" viewBox="0 0 511 511" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="255.5" cy="255.5" r="250.5" fill="#989898" stroke="black" stroke-width="10" />
+                <path
+                    d="M351.54 149.408C337.539 128.221 310.222 122.987 289.782 134.665C271.361 114.997 240.316 115.232 222.073 134.651C192.598 117.764 154.129 137.811 152.904 172.655C124.029 165.879 96 187.501 96 217.143V252.739C96 273.202 104.925 292.71 120.488 306.26L181.556 359.436C184.214 361.749 183.5 362.919 183.5 380C183.5 391.046 192.454 400 203.5 400H361C372.046 400 381 391.046 381 380C381 365.304 380.366 360.784 383.489 353.519L410.261 291.234C414.069 282.373 416 273.001 416 263.379V191.852C416 158.828 382.054 136.438 351.54 149.408V149.408ZM386 263.379C386.004 268.884 384.881 274.332 382.699 279.387L355.927 341.671C352.658 349.278 351 357.321 351 365.578V370H213.5V363.571C213.5 353.34 209.038 343.586 201.256 336.811L140.187 283.636C131.171 275.784 126 264.522 126 252.738V217.142C126 196.387 158.5 196.182 158.5 217.566V243.333C158.5 244.763 158.806 246.175 159.399 247.476C159.991 248.777 160.855 249.936 161.933 250.875L166.308 254.684C167.755 255.945 169.535 256.762 171.434 257.038C173.333 257.315 175.271 257.039 177.018 256.244C178.765 255.449 180.246 254.168 181.284 252.554C182.323 250.941 182.875 249.062 182.875 247.143V174.286C182.875 153.6 215.375 153.208 215.375 174.709V191.428C215.375 196.951 219.852 201.428 225.375 201.428H229.75C235.273 201.428 239.75 196.951 239.75 191.428V165.714C239.75 145.005 272.25 144.667 272.25 166.137V191.428C272.25 196.951 276.727 201.428 282.25 201.428H286.625C292.148 201.428 296.625 196.951 296.625 191.428V174.285C296.625 153.641 329.125 153.173 329.125 174.708V191.428C329.125 196.95 333.602 201.427 339.125 201.427H343.5C349.023 201.427 353.5 196.95 353.5 191.428C353.5 170.711 386 170.419 386 191.851V263.379V263.379Z"
+                    fill="black" />
+            </svg>
+            <!-- Paper Image -->
+            <svg id="paper-image" viewBox="0 0 511 511" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="255.5" cy="255.5" r="250.5" fill="#989898" stroke="black" stroke-width="10" />
+                <g clip-path="url(#clip0_3:21)">
+                    <path
+                        d="M346.867 167.86V161.243C346.867 134.582 322.084 114.359 296.079 121.173C280.404 90.912 238.533 92.1652 223.921 121.629C198.674 115.173 173.521 134.423 173.521 161.355V238.462C161.318 233.922 147.034 235.364 135.551 243.885C117.597 257.21 113.659 282.602 126.652 300.832L200.026 403.789C201.836 406.328 204.227 408.399 206.999 409.827C209.772 411.255 212.846 412 215.966 412H352.291C361.406 412 369.315 405.711 371.362 396.832L389.823 316.773C391.933 307.617 392.998 298.252 393 288.856V208.428C393 183.595 371.274 164.417 346.867 167.86ZM363.641 288.856C363.641 296.027 362.825 303.203 361.216 310.183L344.504 382.656H221.008L150.554 283.806C141.723 271.415 159.742 257.656 168.531 269.987L185.123 293.266C190.624 300.985 202.878 297.109 202.878 287.591V161.355C202.878 145.678 225.245 146.188 225.245 161.778V255.5C225.245 260.902 229.626 265.281 235.031 265.281H239.224C244.629 265.281 249.01 260.902 249.01 255.5V139.959C249.01 124.27 271.377 124.792 271.377 140.381V255.5C271.377 260.902 275.758 265.281 281.163 265.281H285.356C290.761 265.281 295.142 260.902 295.142 255.5V160.82C295.142 145.126 317.508 145.653 317.508 161.243V255.5C317.508 260.902 321.889 265.281 327.294 265.281H331.488C336.893 265.281 341.273 260.902 341.273 255.5V208.85C341.273 192.808 363.64 193.176 363.64 208.428V288.856H363.641Z"
+                        fill="black" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_3:21">
+                        <rect width="274" height="313" fill="white" transform="translate(119 99)" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <!-- Scissors Image -->
+            <svg id="scissor-image" viewBox="0 0 511 511" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="255.5" cy="255.5" r="250.5" fill="#989898" stroke="black" stroke-width="10" />
+                <path
+                    d="M255.5 374.063L292.551 374.056C295.258 374.056 297.966 373.747 300.598 373.14L363.583 358.623C379.652 354.92 391 340.727 391 324.455V215.578C391 202.957 384.103 191.256 373.001 185.043L321.131 156.009C302.918 145.814 285.529 152.927 272.32 169.1L195.61 139.588C175.557 131.872 152.942 141.561 144.987 161.396C136.996 181.32 146.911 203.935 167.187 211.738L208.922 221.625L159.168 216.787C137.571 216.787 120 234.153 120 255.499C120 276.846 137.571 294.213 159.168 294.213H205.553C203.608 308.104 210.154 321.364 221.612 328.62C214.563 351.164 231.705 374.063 255.5 374.063ZM255.5 348.649C242.183 348.649 242.204 329.295 255.5 329.295C260.177 329.295 263.969 325.503 263.969 320.826V317.197C263.969 312.52 260.177 308.728 255.5 308.728H240.68C227.363 308.728 227.383 289.373 240.68 289.373H255.5C260.177 289.373 263.969 285.582 263.969 280.905V277.276C263.969 272.598 260.177 268.807 255.5 268.807H159.168C140.944 268.807 140.973 242.193 159.168 242.193H255.5C260.177 242.193 263.969 238.402 263.969 233.725V227.568C263.969 225.856 263.45 224.185 262.481 222.774C261.512 221.363 260.139 220.279 258.541 219.664L176.311 188.02C159.611 181.594 169.202 156.642 186.486 163.293L274.639 197.216C276.304 197.856 278.128 197.955 279.852 197.498C281.576 197.04 283.112 196.05 284.24 194.669L295.76 180.565C298.84 176.793 304.413 175.767 308.721 178.179L360.592 207.213C363.677 208.94 365.594 212.145 365.594 215.578V324.455C365.594 328.949 362.421 332.82 357.879 333.867L294.892 348.384C294.124 348.561 293.339 348.65 292.551 348.65H255.5V348.649Z"
+                    fill="black" />
+            </svg>
+        </section>
+
+
+        <span class="score-board" id="score-board">
+            <div id="text-for-score-bored"><span id="users-name"></span>: <span id="user-score">0 </span> VS Comp:<span
+                    id="ai-score">0</span>
+        </span>
+    </div>
+
+    </div>
+
+
+
+    <aside id="modal-container" class="modal-container">
+        <div id="modal-inner-container" class="modal-inner-container">On your marks. Get set. PLAY!!!
+            Welcome to Rocky Racers. The game Where we all love to play and race. We have the best road in the south!
+            However do you have the skill to beat me??
+            Like everything there is <strong>rules</strong>... so let me give you the low-down!!!
+            Rock beats Scissors
+            Scissors beats Paper
+            Paper beats Rock.
+            Remember that you can only select your option when the traffic light turns to green
+            Now that we have that cleared up let I will see you on the track!!<button id="close-button">Close</button>
+        </div>
+
+    </aside>
+    <aside id="name-modal" class="modal-container">
+        <div class="modal-inner-container">
+            <h2>Please Enter Your name</h2>
+            <form action="#">
+                <label for="name">
+                    Name:
+                </label>
+                <input type="text" id="name">
+                <input type="submit" value="submit" id="name-submit">Submit</input>
+            </form>
+        </div>
+    </aside>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
